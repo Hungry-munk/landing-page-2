@@ -7,6 +7,8 @@
 :root {
     --dark-blue:#1F2937;
     --link-color:#E5E7EB;
+    --light-blue:#3883F6;
+
 
 }
 
@@ -32,10 +34,9 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding:16px ;
-    gap: clamp(250px,30%, 500px );
+    padding:12px 60px ;
     background-color: var(--dark-blue);
     color: white;
 }
@@ -49,8 +50,11 @@ header {
 
 .left-header-items {
     font-size: 24px;
+    margin-left: 20px;
 }
-
+.right-header-items{
+    margin-right: 20px;
+}
 img {
     border-radius: 50%;
     height:40px;
@@ -60,12 +64,101 @@ img {
 header a {
     text-decoration: none; 
     color: var(--link-color);
-    font-size: 18px;
+    font-size: 14px;
 }
 
+
+/* main content */
+
+/* intro */
 main {
     display: flex;
     flex-direction: column;
     /* flex: 1; */
 }
 
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dark-blue);
+    color: white;
+    padding :16px;
+    justify-content: center;
+    gap: clamp(50px,6% ,150px);
+    padding-top: 100px ;
+    padding-bottom: 100px ;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    justify-content: space-between;
+
+}
+
+.intro-header {
+    font-size: 24px;
+}
+
+.intro-subtext {
+ font-size: 14;
+}
+
+.image-placeholder {
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.intro button {
+    width: 90px;
+    background: var(--light-blue);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* random info */
+
+#random-info{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#random-info h2 {
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 24px;
+    margin-bottom: 40px; ;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    font-size: 12px;
+    text-align: center;
+    gap: 10px;
+}
+
+.box-image {
+    width: 125px;
+    height: 125px;
+    border: var(--light-blue) solid 5px;
+    border-radius: 10px;
+}
+
+/* quote */
