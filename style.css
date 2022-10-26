@@ -39,6 +39,8 @@ header {
     padding:12px 60px ;
     background-color: var(--dark-blue);
     color: white;
+    position: fixed;
+    width: 100%;
 }
 
 .left-header-items,
@@ -47,6 +49,24 @@ header {
     gap: 20px;
     align-items: center;
 }
+
+.header-link::after{
+    content: '';
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    display: block;
+    transition: 300ms ease-in-out;
+}
+
+.header-link:hover::after {
+    content: '';
+    height: 2px;
+    width: 95%;
+    background-color: white;
+    display: block;
+}
+
 
 .left-header-items {
     font-size: 24px;
@@ -124,6 +144,11 @@ main {
     border: none;
 }
 
+button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
 /* random info */
 
 #random-info{
@@ -161,6 +186,12 @@ main {
     height: 125px;
     border: var(--light-blue) solid 5px;
     border-radius: 10px;
+    transition:  0.2s ease-in;
+}
+
+.box-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #3883F6;
 }
 
 /* quote */
@@ -221,6 +252,7 @@ main {
 #CTA button {
     border: 2px solid white;
     height:30px;
+    align-self: flex-end;
 
    
 }
