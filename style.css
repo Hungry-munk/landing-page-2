@@ -129,6 +129,7 @@ main {
 #random-info{
     margin-top: 60px;
     margin-bottom: 60px;
+
 }
 #random-info h2 {
     text-align: center;
@@ -141,6 +142,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -162,3 +164,25 @@ main {
 }
 
 /* quote */
+
+#quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--link-color);
+    padding: 100px;
+    
+}
+
+.quote {
+    font-size: 38px;
+    font-style:italic;
+    font-weight: 1;
+}
+.author {
+    text-align: end;
+    width: 100%;
+}
+
+/* CTA */
