@@ -1,4 +1,6 @@
 # landing-page-2
 Remaking the landing page project from the The Odin Project becuase I am restarting the The Odin Project
 
-This time I am going to make more of a marketing landing page becuase I am still in kinda in SMMA mode and I think it will be fun to build a mearketing landing page.
+This Im just going to put a small spin on the landing page TOP provides,
+
+code image logo from IIsixo_O which can be found at https://www.pinterest.com.au/pin/146085581649639917/
